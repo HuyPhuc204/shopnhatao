@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <div class="row border shadow" style="height: 550px;">
+        <div class="col-md-5">
+            <div class="container d-flex align-items-center">
+                <img ng-src="{{sanpham.anh}}" class="card-img-top" alt="Ảnh Điện thoại">
+            </div>
+        </div>
+        <div class="col-md-7 mt-5">
+            <h2 ng-model="sanpham.ten">{{sanpham.ten}}</h2>
+            <p class="mt-3">{{sanpham.mota}}</p>
+            <h3class="mt-2" ng-model="sanpham.gia">{{sanpham.gia}} VNĐ</h3>
+            <div class="d-flex justify-content-around mt-4">
+                <div ng-repeat="mau in sanpham.mausac track by $index" class="d-flex flex-column" style="width: 120px;">
+                    <label>
+                        <input type="checkbox" ng-model="mau.selected" value="{{mau.mamau}}"  placeholder="{{mau.ten}}">
+                        <span class="{{mau.mamau}}">{{mau.ten}}</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mt-3">
+                <a href="thanhtoan.html" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Mua ngay</a>
+                <button class="btn btn-secondary" ng-click="themVaoGioHang(sanpham)">Thêm vào Giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+</div>

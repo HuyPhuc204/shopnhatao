@@ -1,0 +1,45 @@
+<div class="container shadow mt-5 pb-3" style="margin-bottom: 205px;">
+    <h3 class="">Giỏ hàng</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="col-1">STT</th>
+                <th class="col-3">Tên sản phẩm</th>
+                <th class="col-2">Ảnh sản phẩm</th>
+                <th class="col-2">Giá</th>
+                <th class="col-1">Màu sắc</th>
+                <th class="col-3">Số lượng</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr ng-repeat="item in dsgiohang track by $index">
+                <td class="col-1">{{item.id}}</td>
+                <td class="col-3">{{item.tensanpham}}</td>
+                <td class="col-2">
+                    <div class="d-flex  align-items-center" style="width: 100px; height: 100px;">
+                        <img ng-src="..{{item.anhsanpham}}" alt="" class="mw-100 mh-100">
+                    </div>
+                </td>
+                <td class="col-2">{{item.giasanpham}}</td>
+                <td class="col-1"><span class="{{item.mausac[0].mamau}}">{{item.mausac[0].ten}}</span></td>
+                <td class="col-3">
+                    <div class="d-flex justify-content-around">
+                        <button type="button" class="btn btn-success" data-type="minus" ng-click="giamsoluong(item.id)">
+                            -
+                        </button>
+                        <input type="text" class="form-control" value="{{item.soluong}}" min="0" max="10" style="width: 50px;">
+                        <button type="button" class="btn btn-primary" data-type="plus" ng-click="themsoluong(item.id)">
+                            +
+                        </button>
+                        <button class="btn btn-danger" ng-click="onclickXoa(item.id)">Xóa</button>
+                    </div>
+
+                </td>
+                
+            </tr>
+
+        </tbody>
+        <a href="#!thanhtoan" class="btn btn-success">Thanh toán</a>
+    </table>
+</div>

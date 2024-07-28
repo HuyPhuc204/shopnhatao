@@ -1,0 +1,41 @@
+
+
+        <!-- nội dung chính -->
+        <div class="container mt-5">
+            <!-- Tiêu đề trang -->
+            <h3 class="ms-3">Danh Sách Danh Mục</h3>
+            <div class="d-flex justify-content-end">
+                <a href="#!danhmuc/them" class="btn btn-success me-5">Tạo Mới</a>
+            </div>
+            <!-- Danh sách sản phẩm -->
+            <table class="table table-hover mt-4">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Danh Mục</th>
+                        <th>Link</th>
+                        <th class="text-nowrap d-flex justify-content-center">Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in dsDanhMuc track by $index">
+                        <td class="text-nowrap ">
+                            <!-- Fit chiều rộng = content -->
+                           {{item.id}}
+                        </td>
+                        <td>{{item.ten}}</td>
+                        <td>{{item.link}}</td>
+                        <td class="text-nowrap d-flex justify-content-center">
+                            <button class="btn btn-sm btn-warning ms-2"><a class="text-light text-decoration-none" href="#!danhmuc/sua/{{item.id}}">Sửa</a></button>
+                           <button class="btn btn-sm btn-danger ms-2" ng-click="onClickDel(item.id)">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+   
+
+        </div>
+    </div>
+    <!-- end nội dung -->
+
+ 

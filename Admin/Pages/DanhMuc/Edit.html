@@ -1,0 +1,34 @@
+<!-- nội dung chính -->
+<div class="container pt-4" style="width: 80%;">
+    <h1>Sửa Danh Mục</h1>
+    <form action="" class="mt-5">
+        <div class="mb-3">
+            <span class="form-label">ID Danh Mục:</span>
+            <input type="text" class="form-control" placeholder="Nhập ID VD:DM00" ng-model="danhmuc.id" disabled>
+            <!-- <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                {{validateForm.noiDung[0]}}
+              </div> -->
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Tên Danh Mục:</span>
+            <input type="text" class="form-control" placeholder="Nhập Tên VD:APPLE" ng-model="danhmuc.ten">
+            <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                {{validateForm.noiDung[1]}}
+              </div>
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Link:</span>
+            <input type="text" class="form-control" placeholder="Nhập link" ng-model="danhmuc.link">
+            <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                {{validateForm.noiDung[2]}}
+              </div>
+        </div>
+        <div class="mb-3 d-flex justify-content-center">
+            <button type="submit" class="btn btn-success" ng-click="onClickAdd()">Sửa</button>
+            <button type="submit" class="btn btn-danger ms-4"><a class=" text-light text-decoration-none"
+                    href="#!danhmuc/danhsach">Quay lại</a></button>
+        </div>
+    </form>
+</div>
+</div>
+<!-- end nội dung -->

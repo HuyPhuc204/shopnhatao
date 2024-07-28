@@ -1,0 +1,43 @@
+
+        <!-- nội dung chính -->
+        <div class="container pt-4" style="width: 80%;">
+            <h1>Xem Chi Tiết Sản Phẩm</h1>
+            <form action="">
+                <div class="mb-3">
+                    <span class="form-label">Ảnh SP:</span>
+                    <img src="../..{{sanpham.anh}}" alt="" 
+                        style="width: 100px;height: 100px;">
+                </div>
+                <div class="mb-3">
+                    <span class="form-label">Tên SP:</span>
+                    <input type="text" disabled class=" form-control" ng-model="sanpham.ten">
+                </div>
+
+                <div class="mb-3">
+                    <span class="form-label">Giá SP:</span>
+                    <input type="text" disabled class="form-control" ng-model="sanpham.gia">
+                </div>
+                <div class="mb-3">
+                    <span class="form-label">Mô tả:</span>
+                    <textarea class="form-control" name="" id="" cols="30" rows="10" disabled ng-model="sanpham.mota">
+                    </textarea>
+                </div>
+                <div class="mb-3">
+                    <span class="form-label">Danh Mục SP:</span>
+                   <input type="text" ng-model="sanpham.tendanhmuc" disabled class="form-control">
+                </div>
+                <div class="mb-3 d-flex justify-content-around">
+                    <span class="form-label">Màu SP:</span>
+                    <div ng-repeat=" mau in sanpham.mausac track by $index" class="d-flex flex-column" style="width: 120px;">
+                        <span class="{{mau.mamau}}">{{mau.ten}}</span>
+                    </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-center">
+                    <a href="#!sanpham/sua/{{sanpham.id}}" class="btn btn-success">Sửa</a>
+                    <button type="submit" class="btn btn-danger ms-4"><a class=" text-light text-decoration-none"
+                            href="#!sanpham/danhsach">Quay lại</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end nội dung -->

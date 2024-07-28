@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <script src="../lib/bootstrap.bundle.min.js"></script>
+    <script src="../lib/font-fontawesome-ae333ffef2.js"></script>
+
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/angular-route.js"></script>
+
+
+</head>
+
+<body ng-app="viewer">
+
+    <header class=" container-fluid navbar navbar-expand-sm navbar-dark bg-black ">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <img class="navbar-brand" src="../img/logoap.jpg" style="height: 50px;">
+                <span style="color: white;">SHOP NHÀ TÁO</span>
+            </div>
+            <form class="d-flex me-5">
+                <input class="form-control me-3" type="text" placeholder="tìm kiếm sản phẩm">
+                <button class="btn btn-danger" type="button">Search</button>
+            </form>
+
+            <div ng-controller="loginDangNhap" class="d-flex justify-content-around">
+                <ul class="navbar-nav me-5 ">
+                    <li class="nav-item">
+                        <a class="btn btn-dark me-2" ng-if="!lugin" href="#!/dangky">Đăng ký</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark" ng-if="!lugin" href="#!/dangnhap">Đăng nhập</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <button type="submit" ng-if="lugin" ng-click="logout()" class="btn btn-dark">Đăng
+                            Xuất</button>
+                    </li>
+                </ul>
+                <ul class="text-light navbar-nav mt-2"> {{name}}</ul>
+            </div>
+        </div>
+    </header>
+    <nav class="bg-danger">
+        <div class="container d-flex justify-content-between">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="btn btn-danger" href="#!/">Trang chủ<a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#dm">Danh mục</button>
+                    <div id="dm" class="collapse border-2 shadow-lg rounded-3 text-light " ng-controller="danhMucCtrl">
+                        <ul class="navbar-nav">
+                            <li class="nav-item" ng-repeat="dm in dsDanhMuc track by $index">
+                                <a href="{{dm.link}}" class="btn fw-bold">{{dm.ten}}</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="" class="btn fw-bold">IPAD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="btn  fw-bold">MAC</a>
+                            </li>  -->
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#!cacsanpham" class="btn btn-danger">Các sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">Hỗ trợ</button>
+                </li>
+            </ul>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Liên hệ hỗ trợ</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body d-flex justify-content-around">
+                            <p class="badge rounded-pill bg-secondary"><i class="fa-solid fa-phone"></i> : 0767148662
+                            </p>
+                            <p class="badge rounded-pill bg-success"><i class="fa-solid fa-envelope"></i> :
+                                phucvhph35712@fpt.edu.vn</p>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Thoát</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div ng-controller="soluongCtrl">
+                <a class="btn position-relative mt-1" style="margin-right: 55px;" href="#!giohang" ng-show="isLoggedIn">
+                    <i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i>
+                    <span class="badge bg-black rounded-pill position-absolute" style="top:-2px;right: -10px;">{{tongSoLuong}}</span>
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="container mt-3">
+        <div ng-view></div>
+    </div>
+
+
+
+    <footer class="bg-black text-light d-flex justify-content-between mt-5"
+        style="padding-left: 10px; padding-right: 10px; height: 120px; align-items: center;">
+        <p>&copy; 2024 SHOP NHÀ TÁO. All Rights Reserved.</p>
+        <div>
+            <h6>Liên hệ với chúng tôi:</h6>
+            <p class="badge rounded-pill bg-secondary"><i class="fa-solid fa-phone"></i> : 0767148662</p>
+            <p class="badge rounded-pill bg-success"><i class="fa-solid fa-envelope"></i> : phucvhph35712@fpt.edu.vn</p>
+
+        </div>
+        <div class="">
+            <h6>Theo dõi chúng tôi:</h6>
+            <a href="https://www.facebook.com/" target="_blank" class="btn btn-primary"><i
+                    class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://www.youtube.com/" target="_blank" class="btn btn-danger"><i
+                    class="fa-brands fa-youtube"></i> YouTube</a>
+        </div>
+    </footer>
+
+    <script>
+        var viewer = angular.module('viewer', ['ngRoute']);
+        viewer.config(function ($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    templateUrl: "/Viewer/trangchu.html",
+                    controller: "trangChuCtrl"
+                })
+                .when("/cacsanpham", {
+                    templateUrl: "/Viewer/cacsanpham.html",
+                    controller: "listSPCtrl"
+                })
+                .when("/chitietsanpham/:id", {
+                    templateUrl: "/Viewer/chitietsanpham.html",
+                    controller: "chitietSPCtrl"
+                })
+                .when("/sanpham/:danhmuc", {
+                    templateUrl: "/Viewer/locsp.html",
+                    controller: "locSPCtrl"
+                })
+                .when("/giohang", {
+                    templateUrl: "/Viewer/chitietgiohang.html",
+                    controller: "listgiohangCtrl"
+                })
+                .when("/dangky", {
+                    templateUrl: "/Viewer/dangky.html",
+                    controller: "addDangKy"
+                })
+                .when("/dangnhap", {
+                    templateUrl: "/Viewer/dangnhap.html",
+                    controller: "loginDangNhap"
+                })
+                .when("/thanhtoan", {
+                    templateUrl: "/Viewer/thanhtoan.html",
+                    controller: "thanhToanCtrl"
+                })
+                .otherwise({
+                    redirectTo: '/'
+                })
+        })
+
+        viewer.controller("danhMucCtrl", function ($scope, $http, $routeParams) {
+
+            $http({
+                method: "GET",
+                url: "http://localhost:3000/danhmuc"
+            })
+                .then(function (reponsive) {
+                    $scope.dsDanhMuc = reponsive.data
+                })
+
+        })
+
+       
+
+        viewer.controller("loginDangNhap", function ($scope, $http) {
+            $scope.lugin = localStorage.getItem('lugin');
+
+            // console.log($scope.lugin + 'ngoaài');
+            if (!$scope.lugin) {
+                $scope.lugin = false;
+            }
+            $scope.tenTaiKhoan = "";
+            $scope.matKhau = "";
+            $scope.login = []; // Khởi tạo mảng để lưu trữ tài khoản người dùng
+
+            // Hàm để tải dữ liệu từ server
+            function loadUserData() {
+                $http.get('http://localhost:3000/tai-khoan')
+                    .then(function (response) {
+                        $scope.login = response.data;
+                    })
+                    .catch(function (error) {
+                        console.error('Đã xảy ra lỗi:', error);
+                        alert("Đã xảy ra lỗi tải dữ liệu từ server. Vui lòng thử lại sau.");
+                    });
+            }
+
+            // Gọi hàm để tải dữ liệu ngay khi controller được khởi tạo
+            loadUserData();
+
+            $scope.dangnhap = function () {
+                if (!$scope.tenTaiKhoan || !$scope.matKhau) {
+                    alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.");
+                    return;
+                }
+
+                console.log('Tên đăng nhập:', $scope.tenTaiKhoan);
+                console.log('Mật khẩu:', $scope.matKhau);
+                console.log('Dữ liệu từ API:', $scope.login);
+
+                // Sử dụng hàm findIndex để tìm vị trí của tài khoản trong mảng
+                var index = $scope.login.findIndex(function (account) {
+                    return account.tenTaiKhoan === $scope.tenTaiKhoan && account.matKhau === $scope.matKhau;
+
+                });
+                if (index >= 0) {
+                    localStorage.setItem('name', $scope.tenTaiKhoan);
+                    $scope.lugin = true;
+
+                    localStorage.setItem('lugin', true);
+                    $scope.lugin = localStorage.getItem('lugin');
+                    alert('Đăng nhập thành công!')
+                    window.location.href = '';
+                } else {
+                    alert("Tên đăng nhập hoặc mật khẩu không đúng.");
+                }
+
+            };
+            $scope.name = localStorage.getItem('name')
+            $scope.logout = function () {
+                localStorage.removeItem('lugin');
+                localStorage.removeItem('name');
+                alert('Đăng Xuất Thành Công')
+                $scope.lugin = false
+                window.location.href = '';
+            }
+
+        });
+
+        viewer.controller("soluongCtrl", function ($scope, $http, $routeParams) {
+            $scope.isLoggedIn = localStorage.getItem('lugin');
+            $scope.tinhsoluong = function () {
+                $http({
+                    method: "GET",
+                    url: "http://localhost:3000/giohang"
+                })
+                    .then(function (response) {
+                        $scope.dsgiohang = response.data;
+                        var tongsoluong = 0;
+                        for (var i = 0; i < $scope.dsgiohang.length; i++) {
+                            tongsoluong += $scope.dsgiohang[i].soluong;
+                        }
+                        $scope.tongSoLuong = tongsoluong; // Gán tổng số lượng vào $scope
+                    });
+            }
+
+            $scope.tinhsoluong(); // Gọi hàm tinhsoluong()
+
+        })
+
+        // viewer.controller("themgiohangCtrl", function ($scope, $http, $routeParams) {
+           
+        // })
+
+
+    </script>
+
+    <script src="/Viewer/trangchu.js"></script>
+    <script src="/Viewer/cacsanpham.js"></script>
+    <script src="/Viewer/chitietsanpham.js"></script>
+    <script src="/Viewer/locsp.js"></script>
+    <script src="/Viewer/chitietgiohang.js"></script>
+    <script src="/Viewer/dangky.js"></script>
+    <script src="/Viewer/thanhtoan.js"></script>
+</body>
+
+
+</html>

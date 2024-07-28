@@ -1,0 +1,95 @@
+<!-- nội dung chính -->
+<div class="container pt-4" style="width: 80%;">
+    <h1>Thêm Sản Phẩm</h1>
+    <form action="">
+        <div class="mb-3">
+            <span class="form-label">ID SP:</span>
+            <input type="text" class="form-control" placeholder="Nhập ID" ng-model="sanpham.id">
+            <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                
+                {{validateForm.noiDung[0]}}
+              </div>
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Tên SP:</span>
+            <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" ng-model="sanpham.ten">
+            <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                
+                {{validateForm.noiDung[1]}}
+              </div>
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Ảnh SP:</span>
+            <input type="text" class="form-control" placeholder="Nhập link ảnh" ng-model="sanpham.anh">
+            <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                
+                {{validateForm.noiDung[2]}}
+              </div>
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Giá SP:</span>
+            <input type="number" class="form-control" placeholder="Nhập giá" ng-model="sanpham.gia">
+            <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                
+                {{validateForm.noiDung[3]}}
+              </div>
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Mô tả:</span>
+            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Nhập mô tả"
+                ng-model="sanpham.mota">
+
+                    </textarea>
+                    <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                        {{validateForm.noiDung[4]}}
+                      </div>
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Danh Mục SP:</span>
+            <select class="form-control" ng-model="sanpham.iddanhmuc" id="tenDanhMuc">
+                <option value="">--Lựa chọn--</option>
+                <option ng-repeat="item in dsDanhMuc track by $index" value="{{item.id}}">{{item.ten}}</option>
+            </select>
+            <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                
+                {{validateForm.noiDung[5]}}
+              </div>
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Màu SP:</span>
+            <input type="checkbox" class="checkbox1" value="badge bg-secondary" placeholder="titan">
+            <span class="badge bg-secondary">titan</span>
+
+            <input type="checkbox" class="checkbox1" value="badge bg-primary" placeholder="Xanh dương">
+            <span class="badge bg-primary">Xanh dương</span>
+
+            <input type="checkbox" class="checkbox1" value="badge bg-success" placeholder="Xanh lá">
+            <span class="badge bg-success">Xanh lá</span>
+
+            <input type="checkbox" class="checkbox1" value="badge bg-danger" placeholder="Đỏ">
+            <span class="badge bg-danger">Đỏ</span>
+
+            <input type="checkbox" class="checkbox1" value="badge bg-warning" placeholder="Vàng">
+            <span class="badge bg-warning">Vàng</span>
+
+            <input type="checkbox" class="checkbox1" value="badge bg-light text-dark" placeholder="Trắng">
+            <span class="badge bg-light text-dark">Trắng</span>
+
+            <input type="checkbox" class="checkbox1" value="badge bg-dark" placeholder="Đen">
+            <span class="badge bg-dark">Đen</span>
+
+            <div class="alert alert-danger" ng-if="validateForm.trangThai === false">
+                
+                {{validateForm.noiDung[6]}}
+              </div>
+           
+        </div>
+        <div class="mb-3 d-flex justify-content-center">
+            <button type="submit" class="btn btn-success" ng-click="onClickSMT()">Thêm Mới</button>
+            <button type="submit" class="btn btn-danger ms-4"><a class=" text-light text-decoration-none"
+                    href="#!sanpham/danhsach">Quay lại</a></button>
+        </div>
+    </form>
+</div>
+</div>
+<!-- end nội dung -->

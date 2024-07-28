@@ -1,0 +1,626 @@
+{
+  "sanpham": [
+    {
+      "id": "01",
+      "ten": "Iphone 15",
+      "anh": "/img/anhsanpham/15-thuong.png",
+      "gia": 16000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "titan",
+          "mamau": "badge bg-secondary"
+        },
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "ten": "Iphone 15 Plus",
+      "anh": "/img/anhsanpham/15-plus.webp",
+      "gia": 25000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "titan",
+          "mamau": "badge bg-secondary"
+        },
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "ten": "Iphone 15 Pro",
+      "anh": "/img/anhsanpham/15-pro.jpg",
+      "gia": 28000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "titan",
+          "mamau": "badge bg-secondary"
+        },
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "ten": "Iphone 15 Pro Max",
+      "anh": "/img/anhsanpham/15-promax.png",
+      "gia": 34000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "titan",
+          "mamau": "badge bg-secondary"
+        },
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "ten": "Iphone 14",
+      "anh": "/img/anhsanpham/14-thuong.png",
+      "gia": "20000000",
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "ten": "Iphone 14 Plus",
+      "anh": "/img/anhsanpham/14-plus.png",
+      "gia": 22000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "ten": "Iphone 14 Pro",
+      "anh": "/img/anhsanpham/14-pro.png",
+      "gia": 25000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "ten": "Iphone 14 Pro Max",
+      "anh": "/img/anhsanpham/14-promax.png",
+      "gia": 27000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "ten": "Iphone 13 Mini",
+      "anh": "/img/anhsanpham/13-mini.jpg",
+      "gia": 15000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "ten": "Iphone 13",
+      "anh": "/img/anhsanpham/13-thuong.png",
+      "gia": 17000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "ten": "Iphone 13 Pro",
+      "anh": "/img/anhsanpham/13-pro.jpg",
+      "gia": 19000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "ten": "Iphone 13 Pro Max",
+      "anh": "/img/anhsanpham/13-promax.png",
+      "gia": 22000000,
+      "mota": "iPhone là một dòng điện thoại thông minh được thiết kế và sản xuất bởi công ty công nghệ hàng đầu Apple. Với thiết kế sang trọng, hiệu suất mạnh mẽ và hệ điều hành iOS tiên tiến, iPhone đã trở thành một trong những sản phẩm phổ biến nhất trên thị trường điện thoại di động. iPhone cung cấp nhiều tính năng đa phương tiện, ứng dụng đa dạng trên App Store và tích hợp nhiều công nghệ tiên tiến như Face ID, camera chất lượng cao và dịch vụ đám mây iCloud.",
+      "iddanhmuc": "DM01",
+      "tendanhmuc": "Iphone",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Xanh lá",
+          "mamau": "badge bg-success"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Vàng",
+          "mamau": "badge bg-warning"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "ten": "Ipad Air 4",
+      "anh": "/img/anhsanpham/ipad-air4.png",
+      "gia": 24000000,
+      "mota": "Apple đã mang thiết kế của iPad Pro lên iPad Air 4. Mặt trước của iPad Air 4 không còn phím Home và phần viền trên/dưới dày như thế hệ cũ, thay vào đó là một màn hình viền mỏng với bốn góc được bo tròn. Các cạnh của iPad Air 4 cũng được bo vuông góc, một lần nữa tương tự như iPad Pro.\n\nMàn hình của iPad Air 4 cũng có kích thước lớn hơn, đạt mức 10.9 inch, gần tương đương với kích thước 11 inch của iPad Pro. Màn hình này có độ phân giải 2360×1640, hỗ trợ dải màu P3 và công nghệ True Tone.",
+      "iddanhmuc": "DM02",
+      "tendanhmuc": "Ipad",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "ten": "Ipad Mini 6",
+      "anh": "/img/anhsanpham/ipad-mini6.png",
+      "gia": "24000000",
+      "mota": "Sản phẩm được trang bị con chip A15 Bionic có hiệu năng CPU cao hơn 40%, GPU cao hơn 80%. Đặc biệt Apple nhấn mạnh và khả năng xử lý máy học nhanh hơn 2 lần.\niPad Mini 6 2021 WiFi chính hãng Apple Việt Nam\nApple chính thức ra mắt chiếc iPad Mini với với thiết kế vô cùng nhỏ gọn 4 màu sắc mới: tím, vàng, hồng, xám. iPad Mini 6 sẽ có kích thước màn hình là 8,3 inch. Thiết kế này mang lại tính di động nhỏ gọn hơn bao giờ hết, người dùng hoàn toàn có thể cầm chiếc iPad mini này gọn trong lòng bàn tay. Chiếc iPad mini này cũng có ngoại hình vuông vức hơn so với những chiếc iPad mini trước đây.",
+      "iddanhmuc": "DM02",
+      "tendanhmuc": "Ipad",
+      "mausac": [
+        {
+          "ten": "Xanh dương",
+          "mamau": "badge bg-primary"
+        },
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "ten": "Ipad Pro M2",
+      "anh": "/img/anhsanpham/ipad-pro2.png",
+      "gia": 28000000,
+      "mota": "Pad Pro M2 có một thiết kế cao cấp với mặt lưng làm từ kim loại chắc chắn. Độ mỏng thân máy chỉ 5.9 mm làm cho tổng thể thêm phần sang trọng. Và hiện nay, chắc hẳn trên thị trường khó có dòng tablet nào có thể vượt qua độ mỏng của iPad Pro M2. Nhưng nhìn chung thì iPad Pro M2 không có quá nhiều sự đổi mới về thiết kế so với thế hệ tiền nhiệm, vẫn sẽ là kiểu hoàn thiện vuông vức ở các cạnh và hai mặt, nổi bật nhờ tone màu chủ đạo là xám và bạc để phù hợp cho hầu hết mọi đối tượng.\n\nBên cạnh đó, Apple cũng phát hành hai phiên bản với chuẩn kết nối mạng khác nhau là WiFi và WiFi Cellular. Điểm khác biệt ở hai loại này là phần anten, trên phiên bản WiFi thì dãy này chỉ dừng lại ở phần cụm camera chứ không chạy dài đến phần cạnh bên như WiFi Cellular.",
+      "iddanhmuc": "DM02",
+      "tendanhmuc": "Ipad",
+      "mausac": [
+        {
+          "ten": "Đỏ",
+          "mamau": "badge bg-danger"
+        },
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "ten": "MacBook Air",
+      "anh": "/img/anhsanpham/macbook-air.jpg",
+      "gia": 30000000,
+      "mota": "Macbook Air MQD32SA/A i5 5350U có bộ xử lý Intel Core i5 Broadwell hai nhân xung nhịp 1.8 GHz, bộ nhớ RAM 8 GB thoải mái trong việc duyệt web, chơi game, sử dụng mượt mà các thao tác trong phần mềm Office, Photoshop, AI…\n\nMacbook Air MQD32SA/A i5 5350U cho thời lượng sử dụng lên đến 12 tiếng sau một lần sạc đầy khi sử dụng soạn thảo và lướt web thông thường.\n\nVới các tác vụ nặng hơn như Photoshop, lướt web từ 10-20 tab, sử dụng các ứng dụng nhắn tin, gọi video khi làm việc thì chiếc máy vẫn trụ được khoảng 5-7 tiếng liên tục.",
+      "iddanhmuc": "DM03",
+      "tendanhmuc": "MAC",
+      "mausac": [
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "ten": "Macbook Pro",
+      "anh": "/img/anhsanpham/macbook-pro.jpg",
+      "gia": 35000000,
+      "mota": "MacBook Pro với chip M3, M3 Pro và M3 Max đem đến tốc độ vượt trội, cân được nhiều tác vụ bạn muốn. Được hoàn thiện trên công nghệ 3 nanômét và sở hữu kiến trúc GPU hoàn toàn mới, tương tự chip A17 Pro trên iPhone 15 Pro. Nhờ kiến trúc GPU thế hệ mới và CPU nhanh hơn, dòng chip M3 mang đến hiệu năng cao hơn cũng như nhiều tính năng mới vượt trội cho MacBook Pro.\n\nMacBook Pro có dãy cổng kết nối mạnh mẽ để kết nối với thiết bị ngoại vi tốc độ cao cũng như màn hình độ phân giải cao, hoặc trực tiếp chuyển dữ liệu từ thẻ SDXC sang máy. Đồng thời hỗ trợ cả Wi‑Fi 6E và Bluetooth 5.3.",
+      "iddanhmuc": "DM03",
+      "tendanhmuc": "MAC",
+      "mausac": [
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        },
+        {
+          "ten": "Đen",
+          "mamau": "badge bg-dark"
+        }
+      ]
+    }
+  ],
+  "danhmuc": [
+    {
+      "id": "DM01",
+      "ten": "Iphone",
+      "link": "#!sanpham/Iphone"
+    },
+    {
+      "id": "DM02",
+      "ten": "Ipad",
+      "link": "#!sanpham/Ipad"
+    },
+    {
+      "id": "DM03",
+      "ten": "MAC",
+      "link": "#!sanpham/MAC"
+    }
+  ],
+  "giohang": [
+    {
+      "id": "1d1b",
+      "idsanpham": 16,
+      "tensanpham": "MacBook Air",
+      "anhsanpham": "/img/anhsanpham/macbook-air.jpg",
+      "giasanpham": 60000000,
+      "mausac": [
+        {
+          "ten": "Trắng",
+          "mamau": "badge bg-light text-dark"
+        }
+      ],
+      "soluong": 2
+    }
+  ],
+  "tai-khoan": [
+    {
+      "id": "U01",
+      "tenTaiKhoan": "HuyPhuc",
+      "email": "phuc34@gmail.com",
+      "soDienThoai": "0987654321",
+      "diaChi": "Hà Nội",
+      "matKhau": "123"
+    },
+    {
+      "id": "af9b",
+      "tenTaiKhoan": "aaa",
+      "email": "aaa@gmail.com",
+      "soDienThoai": "012345678",
+      "diaChi": "Hà Nội",
+      "matKhau": "123"
+    }
+  ],
+  "donhang": [
+    {
+      "id": "",
+      "sanpham": [
+        {
+          "ten": "",
+          "anh": "",
+          "gia": 0,
+          "soluong": ""
+        }
+      ],
+      "idtaikhoan": "",
+      "tentaikhoan": "",
+      "sodienthoai": "",
+      "email": "",
+      "diachi": "",
+      "tongtien": 0,
+      "trangthai": ""
+    }
+  ]
+}

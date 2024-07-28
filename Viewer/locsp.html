@@ -1,0 +1,23 @@
+<div class="container">
+    <h4 class="m-3 text-decoration-underline text-danger" ng-if="$index === 0" ng-repeat="item in danhSachSP ">{{item.tendanhmuc}}:</h4>
+    <div class="row d-flex justify-content-around">
+        <div class="col-md-2 ms-2 mb-2 border card" ng-repeat="item in danhSachSP track by $index">
+            <div class="d-flex"><span class="justify-content-end badge bg-warning">NEW</span></div>
+            <div style="width: 150px;height: 200px;" class="container d-flex align-items-center">
+                <img ng-src="..{{item.anh}}" class="card-img-top" alt="Ảnh Điện thoại">
+            </div>
+
+            <div class="card-body">
+                <a href="#!chitietsanpham/{{item.id}}" class="text-decoration-none text-black">
+                    <h5 class="card-title" style="height: 50px;">{{item.ten}} </h5>
+                </a>
+                <p class="card-text">{{item.gia}} VNĐ</p>
+
+                <a href="#!chitietsanpham/{{item.id}}" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-eye"></i>
+                    Xem chi tiết</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>

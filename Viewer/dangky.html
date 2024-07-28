@@ -1,0 +1,52 @@
+<div class="container mt-5 bg-dark text-light" style=" margin-bottom: 66px;">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h3 class="mt-4" style="margin-left: 150px;">Đăng ký tài khoản</h3>
+            <form class="mt-5">
+                <div class="form-group">
+                    <!-- <label for="username">id:</label> -->
+                    <input type="hidden" class="form-control mt-2" ng-model="taikhoan.id">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="username">Tên tài khoản:</label>
+                    <input type="text" class="form-control mt-2" ng-model="taikhoan.tenTaiKhoan">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="username" class="mt-2">Email:</label>
+                    <input type="email" class="form-control mt-2" ng-model="taikhoan.email">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="username" class="mt-2">Số điện thoại:</label>
+                    <input type="text" class="form-control mt-2" ng-model="taikhoan.soDienThoai">
+                </div>
+                <div class="form-group">
+                    <label for="username" class="mt-2">Địa Chỉ:</label>
+                    <input type="text" class="form-control mt-2" ng-model="taikhoan.diaChi">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="password " class="mt-2">Mật khẩu:</label>
+                    <input type="password" class="form-control mt-2" ng-model="taikhoan.matKhau">
+                    
+                </div>
+                <div class="form-group">
+                    <div ng-if="formInvalid" class="text-danger">
+                        {{formInvalidMessage}}
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 container" ng-click="dangKy()">Đăng Ký</button>
+                <div class="d-flex justify-content-md-around mt-2">
+                    <a href="#" class="link-danger">Quên mật khẩu</a>
+                    <div class="d-flex">
+                        <p>Bạn đã có tài khoản ?</p>
+                        <a href="dangnhap.html" class="link-danger">Đăng nhập</a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+
+        <!-- nội dung chính -->
+        <div class="container mt-5">
+            <!-- Tiêu đề trang -->
+            <h3 class="ms-3">Danh Sách Sản Phẩm</h3>
+            <div class="d-flex justify-content-end">
+                <a href="#!sanpham/them" class="btn btn-success me-5">Tạo Mới</a>
+            </div>
+            <!-- Danh sách sản phẩm -->
+            <table class="table table-hover mt-2">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Danh mục</th>
+                        <th style="width: 100px;">Màu</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in danhSachSP track by $index">
+                        <td class="text-nowrap" width="1px">
+                            <!-- Fit chiều rộng = content -->
+                           {{item.id}}
+                        </td>
+                        <td class="text-nowrap" width="1px">
+                            <div class="bg-light border rounded d-flex align-items-center justify-content-center"
+                                style="height: 60px;width: 60px;">
+                                <img src="../..{{item.anh}}" class="mh-100 mw-100" alt="">
+                            </div>
+                        </td>
+                        <td>{{item.ten}}</td>
+                        <td>{{item.gia}} VNĐ</td>
+                        <td>{{item.tendanhmuc}}</td>
+                        <td ng-repeat=" mau in item.mausac track by $index" class="d-flex flex-column">
+                            <span class="{{mau.mamau}}">{{mau.ten}}</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-primary"><a class="text-light text-decoration-none" href="#!sanpham/chitiet/{{item.id}}">Xem</a></button>
+                            <button class="btn btn-sm btn-warning ms-2"><a class="text-light text-decoration-none" href="#!sanpham/sua/{{item.id}}">Sửa</a></button>
+                            <button class="btn btn-sm btn-danger ms-2" ng-click="onClickDel(item.id)">Xóa</button>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            <!-- Phân trang -->
+            <!-- <div class="d-flex justify-content-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Lùi</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Tiến</a></li>
+                    </ul>
+                </nav>
+            </div> -->
+        </div>
+    <!-- end nội dung -->
+
+  
